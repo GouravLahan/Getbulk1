@@ -3,6 +3,5 @@
   publish = ".next"
 
 [build.environment]
-  # NEXT_USE_NETLIFY_EDGE = "true"
   NEXTJS_IGNORE_TS_ERRORS = "true"
   NEXTJS_IGNORE_ESLINT_ERRORS = "true"
