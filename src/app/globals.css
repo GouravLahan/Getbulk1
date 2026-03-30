@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #000000;
+  --color-primary: #d4ff00;
+  --color-secondary: #00f2fe;
+  --color-bg-alt: #0a0a0a;
+  --color-text-muted: #a1a1aa;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-white selection:bg-primary selection:text-background;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+}
+
+html {
+  scroll-padding-top: 100px;
+  scroll-behavior: auto !important; /* Managed by Lenis */
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.will-change-transform {
+  will-change: transform;
+}
